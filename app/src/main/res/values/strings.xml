@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="convert_label">Convert</string>
+    <string name="input_hint_label">Enter amount in $</string>
+    <string name="colon">:</string>
+    <string name="indian_rupees_label">Indian Rupees</string>
+    <string name="malaysian_ringgit_label">Malaysian Ringgit</string>
+    <string name="bahraini_dinar_label">Bahraini Dinar</string>
+    <string name="russian_ruble_label">Russian Ruble</string>
+    <string name="hungarian_forint_label">Hungarian Forint</string>
+    <string name="japanese_yen_label">Japanese Yen</string>
+    <string name="swiss_franc_label">Swiss Franc</string>
+</resources>
