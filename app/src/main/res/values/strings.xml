@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Currency Converter</string>
     <string name="convert_label">Convert</string>
-    <string name="input_hint_label">Enter amount in $</string>
+    <string name="input_hint_label">Enter amount</string>
     <string name="colon">:</string>
     <string name="indian_rupees_label">Indian Rupees</string>
     <string name="malaysian_ringgit_label">Malaysian Ringgit</string>

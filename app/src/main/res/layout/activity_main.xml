@@ -16,20 +16,31 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <Spinner
+                android:id="@+id/currencySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"/>
+
             <EditText
-                android:id="@+id/inputDollars"
+                android:id="@+id/input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:hint="@string/input_hint_label"
                 android:padding="10dp"
                 android:textColor="@color/black"
+                android:fontFamily="@font/exo"
                 android:singleLine="false"
-                android:inputType="number"
+                android:inputType="numberDecimal"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:background="@drawable/rounded_corners"/>
 
             <LinearLayout
+                android:id="@+id/convertedAmount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -50,26 +61,29 @@
                         android:weightSum="1">
 
                         <TextView
+                            android:id="@+id/currencyLabel1"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
-                            android:textColor="@color/black"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="@string/indian_rupees_label"/>
+                            android:textColor="@color/black" />
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.05"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textColor="@color/black"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="@string/colon"/>
                         <TextView
-                            android:id="@+id/indianRupees"
+                            android:id="@+id/currency1"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.44"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textAlignment="textEnd"
                             android:textColor="@color/black"
@@ -89,26 +103,29 @@
                         android:weightSum="1">
 
                         <TextView
+                            android:id="@+id/currencyLabel2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textColor="@color/black"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="@string/malaysian_ringgit_label"/>
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.05"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textColor="@color/black"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="@string/colon"/>
                         <TextView
-                            android:id="@+id/malaysianRinggit"
+                            android:id="@+id/currency2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.44"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textAlignment="textEnd"
                             android:textColor="@color/black"
@@ -128,26 +145,29 @@
                         android:weightSum="1">
 
                         <TextView
+                            android:id="@+id/currencyLabel3"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textColor="@color/black"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="@string/bahraini_dinar_label"/>
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.05"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textColor="@color/black"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="@string/colon"/>
                         <TextView
-                            android:id="@+id/bahrainiDinar"
+                            android:id="@+id/currency3"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.44"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textAlignment="textEnd"
                             android:textColor="@color/black"
@@ -167,26 +187,29 @@
                         android:weightSum="1">
 
                         <TextView
+                            android:id="@+id/currencyLabel4"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textColor="@color/black"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="@string/russian_ruble_label"/>
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.05"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textColor="@color/black"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="@string/colon"/>
                         <TextView
-                            android:id="@+id/russianRuble"
+                            android:id="@+id/currency4"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.44"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textAlignment="textEnd"
                             android:textColor="@color/black"
@@ -206,26 +229,29 @@
                         android:weightSum="1">
 
                         <TextView
+                            android:id="@+id/currencyLabel5"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textColor="@color/black"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="@string/hungarian_forint_label"/>
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.05"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textColor="@color/black"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="@string/colon"/>
                         <TextView
-                            android:id="@+id/hungarianForint"
+                            android:id="@+id/currency5"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.44"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textAlignment="textEnd"
                             android:textColor="@color/black"
@@ -244,26 +270,29 @@
                         android:padding="5dp"
                         android:weightSum="1">
                         <TextView
+                            android:id="@+id/currencyLabel6"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textColor="@color/black"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="@string/japanese_yen_label"/>
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.05"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textColor="@color/black"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="@string/colon"/>
                         <TextView
-                            android:id="@+id/japaneseYen"
+                            android:id="@+id/currency6"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.44"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textAlignment="textEnd"
                             android:textColor="@color/black"
@@ -282,26 +311,29 @@
                         android:padding="5dp"
                         android:weightSum="1">
                         <TextView
+                            android:id="@+id/currencyLabel7"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textColor="@color/black"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="@string/swiss_franc_label"/>
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.05"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textColor="@color/black"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="@string/colon"/>
                         <TextView
-                            android:id="@+id/swissFranc"
+                            android:id="@+id/currency7"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.44"
+                            android:fontFamily="@font/exo"
                             android:padding="5dp"
                             android:textAlignment="textEnd"
                             android:textColor="@color/black"

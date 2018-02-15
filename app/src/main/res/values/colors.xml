@@ -9,4 +9,5 @@
     <color name="light_orange">#FFB366</color>
     <color name="background_color">#BDD7EE</color>
     <color name="row_color">#FBE5D6</color>
+    <color name="splash_color">#AA1F41</color>
 </resources>
